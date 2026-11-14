@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Semana Acadêmica de Tecnologia, de 23 a 27 de novembro de 2026.">
+  <title>Semana Acadêmica de Tecnologia 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Semana Acadêmica de Tecnologia 2026, início">
+        <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+        <span><strong>Semana Acadêmica</strong><small>Tecnologia • 2026</small></span>
+      </a>
+      <nav class="site-nav" id="navegacao" aria-label="Navegação principal">
+        <a href="#inicio" aria-current="page">Início</a>
+        <a href="#informacoes" data-message="A seção Sobre ainda está em preparação.">Sobre</a>
+        <a href="#informacoes" data-message="A programação ainda está em preparação.">Programação</a>
+        <a href="#informacoes" data-message="A seção de palestrantes ainda está em preparação.">Palestrantes</a>
+        <a href="#informacoes" data-message="O canal de contato ainda não foi informado.">Contato</a>
+      </nav>
+      <a class="button header-cta" href="#informacoes" data-message="O link oficial de inscrição ainda não foi informado.">Inscreva-se <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-controls="navegacao" aria-expanded="false" aria-label="Abrir menu" hidden>
+        <span aria-hidden="true">☰</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="inicio" tabindex="-1">
+    <section class="hero" aria-labelledby="titulo">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="edition"><span aria-hidden="true"></span>Edição 2026</p>
+          <h1 id="titulo">Semana<br>Acadêmica de<br><strong>Tecnologia</strong></h1>
+          <p class="hero__description">Conectando conhecimento, inovação e oportunidades.</p>
+          <dl class="facts">
+            <div class="fact">
+              <span class="fact__icon" aria-hidden="true">▦</span>
+              <div><dt>Quando</dt><dd><time datetime="2026-11-23">23</time> a <time datetime="2026-11-27">27 de novembro</time></dd></div>
+            </div>
+            <div class="fact">
+              <span class="fact__icon" aria-hidden="true">⌖</span>
+              <div><dt>Onde</dt><dd>Universidade • Campus <small>(a confirmar)</small></dd></div>
+            </div>
+          </dl>
+          <div class="hero__actions">
+            <a class="button" href="#informacoes" data-message="O link oficial de inscrição ainda não foi informado.">Quero participar <span aria-hidden="true">↗</span></a>
+            <a class="agenda-link" href="#informacoes" data-message="A programação ainda está em preparação.">Ver programação <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-art__panel"></div>
+          <div class="hero-art__orbit"></div>
+          <span class="hero-art__tag hero-art__tag--code"><b>✣</b> Ideias em código</span>
+          <span class="hero-art__tag hero-art__tag--signal"><b>•</b> Conexões ativas</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="container status" id="informacoes" aria-labelledby="status-title">
+      <h2 id="status-title">Informações do evento</h2>
+      <p>Programação e inscrições: informações a confirmar.</p>
+    </section>
+  </main>
+
+  <dialog id="aviso" aria-labelledby="aviso-titulo">
+    <h2 id="aviso-titulo">Informações do evento</h2>
+    <p id="aviso-texto"></p>
+    <form method="dialog">
+      <button type="submit" class="button">Fechar</button>
+    </form>
+  </dialog>
+</body>
+</html>
