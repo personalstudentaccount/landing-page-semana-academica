@@ -34,6 +34,15 @@ button { font: inherit; cursor: pointer; }
 
 .skip-link:focus { transform: translateY(0); }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* Cabeçalho */
 .site-header { background: var(--night); border-bottom: 1px solid #1b2942; }
 
@@ -181,6 +190,120 @@ button { font: inherit; cursor: pointer; }
 .hero-art__tag--signal { left: 0; bottom: 0; }
 .hero-art__tag--signal b { color: #69e9b7; }
 
+/* Indicadores e sobre o evento */
+.highlights { padding-block: clamp(36px, 6.3vw, 90px) clamp(36px, 7.2vw, 104px); }
+.highlights__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.highlight {
+  position: relative;
+  min-height: 215px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: #0e1b32;
+}
+
+.section-icon {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid #254668;
+  border-radius: 12px;
+  background: #132946;
+  color: var(--cyan);
+  font: 700 16px ui-monospace, monospace;
+}
+
+.section-icon--talk::before {
+  content: "";
+  width: 15px;
+  height: 10px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  box-shadow: 0 4px 0 -3px currentColor;
+}
+
+.highlight h3 { margin: 15px 0 6px; font-size: 22px; font-weight: 500; }
+.highlight__number { position: absolute; top: 28px; right: 24px; color: #b19aff; font-size: 23px; }
+.highlight p, .about__content > p:not(.section-label) { margin: 0; color: var(--muted); line-height: 1.6; }
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1.12fr;
+  gap: clamp(24px, 5vw, 72px);
+  align-items: center;
+  padding-bottom: clamp(42px, 6.3vw, 90px);
+  scroll-margin-top: 24px;
+}
+
+.about__figure {
+  position: relative;
+  margin: 0;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid #21344e;
+  border-radius: 22px;
+  background: #0d192d;
+}
+
+.about__figure img { width: 100%; height: auto; aspect-ratio: 1.62; display: block; object-fit: cover; }
+.about__image-credit {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 7px;
+  border-radius: 4px;
+  background: #081329e8;
+  color: #e1ebff;
+  font-size: 11px;
+}
+
+.about__figure figcaption {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #0b1728ee;
+}
+
+.about__figure figcaption small { display: block; margin-top: 3px; color: var(--muted); line-height: 1.35; }
+.about__figure figcaption .section-icon { color: white; background: #2265df; }
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 14px;
+  color: var(--cyan);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.section-label::before { content: ""; width: 28px; height: 1px; background: currentColor; }
+.about h2 { max-width: 470px; margin: 0 0 14px; font-size: clamp(30px, 3.3vw, 48px); line-height: 1.05; font-weight: 450; }
+.about__topics { display: grid; gap: 14px; margin: 22px 0 24px; padding: 0; list-style: none; }
+.about__topics li { display: flex; align-items: center; gap: 12px; }
+.about__topics .section-icon { color: #b19aff; }
+.about__topics p { margin: 3px 0 0; color: var(--muted); font-size: 14px; line-height: 1.45; }
+.about__link { display: inline-flex; align-items: center; gap: 10px; padding: 13px 19px; border: 1px solid var(--line); border-radius: 8px; font-weight: 650; font-size: 14px; }
+.about__link span { color: var(--cyan); }
+.about__link:hover { border-color: var(--cyan); }
+
 .status { padding-block: 34px; }
 .status h2 { margin: 0 0 8px; font-size: 17px; }
 .status p { margin: 0; color: var(--muted); }
@@ -235,4 +358,10 @@ dialog p { color: var(--muted); line-height: 1.5; }
   .hero__actions { gap: 5px 14px; }
   .hero__actions .button { min-height: 48px; padding-inline: 14px; }
   .agenda-link { font-size: 13px; }
+  .highlights__grid, .about { grid-template-columns: 1fr; }
+  .highlight { min-height: auto; padding: 20px; }
+  .highlight__number { top: 24px; right: 20px; }
+  .about { gap: 26px; }
+  .about__figure img { aspect-ratio: 1.25; }
+  .about__figure figcaption { right: 10px; bottom: 10px; left: 10px; }
 }

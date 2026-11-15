@@ -23,11 +23,13 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
-navigation.querySelector('[aria-current]').addEventListener('click', () => {
-  if (mobileLayout.matches) {
-    setMenu(false);
-    document.querySelector('#inicio').focus();
-  }
+navigation.querySelectorAll('a:not([data-message])').forEach((link) => {
+  link.addEventListener('click', () => {
+    if (mobileLayout.matches) {
+      setMenu(false);
+      document.querySelector(link.hash).focus();
+    }
+  });
 });
 
 document.querySelectorAll('[data-message]').forEach((link) => {
