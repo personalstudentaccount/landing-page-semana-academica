@@ -304,6 +304,76 @@ button { font: inherit; cursor: pointer; }
 .about__link span { color: var(--cyan); }
 .about__link:hover { border-color: var(--cyan); }
 
+/* Programação */
+.schedule { padding-block: clamp(44px, 7vw, 100px); background: var(--night); }
+.schedule__header { display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 16px 24px; }
+.schedule__header h2 { margin: 0 0 14px; font-size: clamp(30px, 3.3vw, 48px); line-height: 1.05; font-weight: 450; }
+.schedule__header p:not(.section-label), .schedule__note { margin: 0; color: var(--muted); line-height: 1.55; }
+.schedule__note { margin-block: 18px 12px; font-size: 13px; }
+.schedule__download { background: transparent; color: inherit; }
+
+.schedule__tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+.schedule__tabs button {
+  min-height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #0e1b32;
+  color: #f4f7ff;
+  font-size: 14px;
+  text-align: left;
+}
+
+.schedule__tabs button small { font-size: 10px; font-weight: 650; }
+.schedule__tabs button:hover { border-color: var(--cyan); }
+.schedule__tabs button[aria-selected="true"] { background: #2265df; border-color: #5791ff; }
+.schedule__tabs button[aria-selected="true"] small::before { content: "•"; margin-right: 4px; }
+.schedule__day { margin-top: 36px; }
+.schedule__day-title { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; font-size: 14px; }
+.schedule__day-title::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); }
+.schedule__events { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.schedule__events li, .schedule__empty { padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: #0e1b32; }
+.schedule__events li { display: grid; grid-template-columns: 110px auto minmax(0, 1fr) auto; align-items: center; gap: 20px; }
+.schedule__time {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  margin: 0;
+  padding-right: 16px;
+  border-right: 1px solid var(--line);
+  color: var(--cyan);
+  font: 700 22px ui-monospace, monospace;
+}
+
+.schedule__time span { color: var(--muted); font-size: 12px; font-weight: 400; }
+.schedule__icon { color: #b19aff; background: #20244b; border-color: #20244b; }
+.schedule__details h4 { margin: 0 0 7px; font-size: clamp(17px, 2vw, 22px); font-weight: 500; }
+.schedule__details p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 14px; }
+.schedule__details .schedule__meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 8px; color: #e2ebfc; font-size: 12px; }
+.schedule__category {
+  align-self: start;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 5px 9px;
+  border: 1px solid #254668;
+  border-radius: 999px;
+  background: #102941;
+  color: var(--cyan);
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.schedule__empty { margin: 0; color: var(--muted); }
+
 .status { padding-block: 34px; }
 .status h2 { margin: 0 0 8px; font-size: 17px; }
 .status p { margin: 0; color: var(--muted); }
@@ -364,4 +434,12 @@ dialog p { color: var(--muted); line-height: 1.5; }
   .about { gap: 26px; }
   .about__figure img { aspect-ratio: 1.25; }
   .about__figure figcaption { right: 10px; bottom: 10px; left: 10px; }
+  .schedule__tabs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .schedule__tabs button { min-height: 54px; padding: 8px 10px; font-size: 12px; }
+  .schedule__day { margin-top: 26px; }
+  .schedule__events li { grid-template-columns: 1fr auto; gap: 12px; padding: 16px; }
+  .schedule__time { grid-row: 1; flex-direction: row; align-items: baseline; justify-content: start; border: 0; padding: 0; font-size: 17px; white-space: nowrap; }
+  .schedule__icon { display: none; }
+  .schedule__category { grid-column: 2; grid-row: 1; }
+  .schedule__details { grid-column: 1 / -1; }
 }

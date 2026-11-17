@@ -385,3 +385,7 @@ Seu foco não é apenas gerar código: é entregar duas atividades acadêmicas c
 Prompt usado no ImageGen para a foto ilustrativa da seção Sobre:
 
 > Use case: photorealistic-natural. Asset: a landscape editorial photo for a Brazilian university technology week landing page. Four fictional young adult university students, diverse Brazilian appearances, collaborate around an electronics prototype and an open laptop at a workbench in a campus innovation lab. Candid, eye-level, waist-up group composition, realistic hands and faces. Deep navy surroundings, subdued cyan practical lighting and gentle warm light on faces. Keep faces and workbench visible inside a tight 4:3 crop. No captions, visible brand logos, legible text, watermarks, or UI overlays.
+
+## 5. Programação
+
+> prossiga. commita o que tiver pendente e prossiga com as atividades
