@@ -389,3 +389,7 @@ Prompt usado no ImageGen para a foto ilustrativa da seção Sobre:
 ## 5. Programação
 
 > prossiga. commita o que tiver pendente e prossiga com as atividades
+
+## 6. Seção de palestrantes
+
+> continue
