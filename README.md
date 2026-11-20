@@ -1,17 +1,27 @@
 # Semana Acadêmica de Tecnologia
 
-Landing page acadêmica baseada nos frames desktop e mobile do [Figma Design](https://www.figma.com/design/Sdy6smlooBjashjhqnSGL1/projeto?node-id=2-9041). O projeto usa HTML, CSS e JavaScript sem dependências.
+Landing page acadêmica da Semana Acadêmica de Tecnologia 2026, baseada no [protótipo do Figma](https://www.figma.com/design/Sdy6smlooBjashjhqnSGL1/projeto?node-id=2-9041). Feita com HTML5, CSS3 e JavaScript, sem dependências externas de código.
 
-Abra `index.html` no navegador para ver a página. O projeto já inclui cabeçalho, primeira tela, menu mobile, indicadores, seção Sobre, palestrantes e programação por dia. A marca e a arte geométrica foram recriadas a partir do canvas do Figma, onde medidas e estilos de camada exigem login para inspeção.
+## Como executar
 
-Os números dos indicadores foram transcritos do protótipo. A foto da seção Sobre é uma ilustração provisória gerada com ImageGen, identificada na página. Ela pode ser substituída pelo arquivo original do Figma em `assets/`.
+Abra `index.html` em um navegador. Para executar via servidor local, no diretório do projeto use `python -m http.server 8000` e acesse `http://localhost:8000`.
 
-A agenda reproduz as quatro atividades de 23 de novembro visíveis no Figma e marca os dias 24 a 27 como pendentes. Use as setas do teclado para alternar os dias ou baixe a versão em texto na própria seção. Os quatro cartões de palestrantes aguardam nomes, cargos e fotos oficiais. O nome do campus, a URL de inscrição e os dados dos demais dias também aguardam confirmação. A seção Contato será implementada na próxima etapa.
+## Funcionalidades
+
+- Navegação por âncoras e menu adaptado a celular.
+- Seções de apresentação, destaques, sobre, palestrantes, programação, inscrição e rodapé.
+- Programação em cinco abas; navegação por teclado e exportação do conteúdo para `.txt`.
+- Aviso informativo nos botões de inscrição enquanto o endereço oficial não for fornecido.
+
+## Dados pendentes
+
+A agenda contém quatro atividades de 23 de novembro visíveis no material consultado. Atividades dos dias 24 a 27, local/campus, URL de inscrição, contato oficial e dados reais dos palestrantes precisam ser confirmados. A imagem da seção Sobre é ilustrativa e provisória. O canvas do Figma foi consultado visualmente, mas as medidas e estilos do inspetor não estavam disponíveis nesta sessão.
 
 ## Integrantes
 
 - [Nome completo a informar]
 
-## Registro de IA
+## Documentação
 
-Os prompts usados no projeto estão em [PROMPTS.md](PROMPTS.md).
+- [Guia de apresentação](GUIA_APRESENTACAO.md)
+- [Prompts utilizados](PROMPTS.md)

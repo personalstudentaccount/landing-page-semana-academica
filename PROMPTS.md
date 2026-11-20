@@ -393,3 +393,11 @@ Prompt usado no ImageGen para a foto ilustrativa da seção Sobre:
 ## 6. Seção de palestrantes
 
 > continue
+
+## 7. Finalização
+
+> verifica se falta algo e ja conclui tudo. e me mostra resultados
+
+## 8. Conferência final dos requisitos
+
+> verifica se tudo esta feito conforme requisitos

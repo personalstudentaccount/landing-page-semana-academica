@@ -401,6 +401,23 @@ button { font: inherit; cursor: pointer; }
 .status { padding-block: 34px; }
 .status h2 { margin: 0 0 8px; font-size: 17px; }
 .status p { margin: 0; color: var(--muted); }
+
+.registration { padding-block: clamp(30px, 5vw, 68px); background: linear-gradient(110deg, #1769dd, #443ec8 72%, #6541df); }
+.registration__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.registration .section-label { color: #c9f7ff; }
+.registration h2 { max-width: 640px; margin: 0 0 9px; font-size: clamp(25px, 3.5vw, 42px); line-height: 1.08; }
+.registration__inner > div > p:last-child { margin: 0; color: #e2eaff; line-height: 1.5; }
+.registration__button { display: inline-flex; align-items: center; gap: 10px; padding: 13px 18px; border: 1px solid #ffffff80; border-radius: 8px; background: #ffffff16; font-weight: 650; }
+.registration__button:hover { background: #ffffff28; }
+
+.site-footer { background: #050a16; }
+.site-footer__main { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; padding-block: 32px; }
+.site-footer__nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 22px; }
+.site-footer__nav a, .site-footer__contact, .site-footer__bottom { color: var(--muted); font-size: 13px; }
+.site-footer__nav a:hover, .site-footer__bottom a:hover { color: #fff; }
+.site-footer__contact { justify-self: end; margin: 0; }
+.site-footer__bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid #1b2942; padding-block: 15px; }
+.site-footer__bottom p { margin: 0; }
 dialog {
   width: min(420px, calc(100% - 32px));
   padding: 25px;
@@ -436,6 +453,9 @@ dialog p { color: var(--muted); line-height: 1.5; }
   .menu-toggle { grid-column: 3; grid-row: 1; }
   .hero__grid { min-height: 0; padding-block: 64px; }
   .speakers__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .site-footer__main { grid-template-columns: 1fr auto; }
+  .site-footer__nav { grid-column: 1 / -1; grid-row: 2; justify-content: flex-start; }
+  .site-footer__contact { grid-column: 1 / -1; justify-self: start; }
 }
 
 @media (max-width: 680px) {
