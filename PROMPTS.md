@@ -3,7 +3,7 @@
 ## 1. Pedido mestre
 
 
-# CONTEXTO MESTRE — PROJETO ACADÊMICO DE PROGRAMAÇÃO FRONT-END
+# CONTEXTO MESTRE - PROJETO ACADÊMICO DE PROGRAMAÇÃO FRONT-END
 
 Você é um engenheiro de software responsável por analisar, organizar, desenvolver e preparar a entrega de duas atividades acadêmicas da disciplina de Programação Front-end do curso de Análise e Desenvolvimento de Sistemas.
 
@@ -13,12 +13,9 @@ Seu objetivo é **executar as atividades até que estejam tecnicamente prontas p
 
 ## 1. Contexto acadêmico
 
-Existem duas atividades distintas.
-
-### ATIVIDADE A — Landing Page da Semana Acadêmica de Tecnologia
+### Landing Page da Semana Acadêmica de Tecnologia
 
 O objetivo é desenvolver uma landing page baseada em um protótipo criado no Figma.
-
 O protótipo possui versões desktop e mobile. As imagens de referência serão fornecidas a você.
 
 **Critérios de avaliação:**
@@ -34,38 +31,7 @@ O protótipo possui versões desktop e mobile. As imagens de referência serão 
 - Identificação dos nomes dos integrantes da equipe.
 - Caso seja utilizada inteligência artificial para programação, entregar um arquivo Markdown (`.md`) contendo os prompts utilizados.
 
-O prazo dessa atividade ainda não foi informado.
-
-### ATIVIDADE B — Laboratórios GitHub
-
-O professor disponibilizou um repositório utilizado nas aulas:
-
-https://github.com/leandrofepi/prog_front_end_tads_26
-
-O aluno possui dois repositórios próprios:
-
-https://github.com/personalstudentaccount/frontend
-
-https://github.com/personalstudentaccount/revisao_git
-
-**Instrução do professor:**
-
-"Enviar o link do repositório utilizado nas aulas."
-
-**Critérios de avaliação:**
-
-- Commits com datas compatíveis com o segundo bimestre.
-- Estrutura do projeto organizada.
-
-**Prazo:** 28 de novembro de 2026, às 23h59.
-
-A hipótese inicial é que `personalstudentaccount/frontend` corresponde à atividade de laboratórios, enquanto `revisao_git` contém exercícios independentes de revisão do Git.
-
-Essa hipótese deve ser verificada, não presumida como verdadeira.
-
-O objetivo desta atividade é garantir que o repositório efetivamente utilizado nas aulas esteja organizado e contenha o trabalho realizado, com um histórico Git legítimo.
-
-## 2. Investigação obrigatória dos repositórios
+## 2. Investigação obrigatória
 
 Antes de modificar qualquer arquivo:
 
@@ -78,8 +44,6 @@ Antes de modificar qualquer arquivo:
 7. Identifique possíveis alterações locais não commitadas.
 
 Não trate a simples diferença na quantidade de commits como prova de exercício faltante. Compare conteúdo e histórico efetivos.
-
-Não sobrescreva trabalhos existentes sem necessidade.
 
 Não crie commits retroativos, não altere timestamps artificialmente e não fabrique histórico acadêmico.
 
@@ -205,14 +169,6 @@ Quando possível, execute o projeto e valide a interface em diferentes larguras 
 
 ## 4. Organização dos projetos
 
-Trate as atividades como entregas distintas.
-
-Preserve preferencialmente:
-
-- `frontend`: laboratórios.
-- `revisao_git`: revisão de Git.
-- `landing-page-semana-academica`: landing page, caso ainda não exista projeto equivalente.
-
 Não crie automaticamente um projeto duplicado caso já exista uma implementação apropriada.
 
 Use uma estrutura simples e consistente com a tecnologia escolhida.
@@ -243,13 +199,7 @@ Na landing page, inclua:
 - Decisões técnicas e dificuldades.
 - Perguntas que o professor poderá fazer, com explicações fundamentadas no código real.
 
-Não invente nomes de integrantes. Utilize campos claramente identificados até receber os nomes verdadeiros.
-
 ## 5. Preparação para avaliação
-
-Considere que 20 dos 25 pontos da landing page estão relacionados à apresentação e à capacidade de explicar o código.
-
-Portanto, não basta produzir uma interface bonita.
 
 O projeto precisa permitir que o aluno explique:
 
@@ -288,13 +238,9 @@ Estabeleça a arquitetura dos arquivos, as tarefas necessárias e a ordem de imp
 
 Defina critérios objetivos de conclusão.
 
-**Etapa 3 — Laboratórios GitHub**
-
-Compare os trabalhos locais com o material do professor.
+**Etapa 3 — GitHub**
 
 Organize o repositório, implemente o que for efetivamente exigido e verificável e preserve o histórico legítimo.
-
-Não presuma que todo código do professor deve ser copiado.
 
 **Etapa 4 — Landing Page**
 
@@ -341,7 +287,7 @@ Ao final, desejo obter:
 
 **INSTRUÇÃO FINAL**
 
-Comece agora pelo diagnóstico do ambiente e dos repositórios.
+Comece agora pelo diagnóstico do ambiente.
 
 Apresente as principais descobertas e um plano objetivo. Em seguida, execute as etapas viáveis sem interromper desnecessariamente o trabalho.
 
@@ -360,11 +306,9 @@ Seu foco não é apenas gerar código: é entregar duas atividades acadêmicas c
 
 ## 3. Orientações posteriores aplicadas a esta etapa
 
-> me ajude a atualizar o laboratorio pra entrar em igualidade com o do professor, mas faça etapas a etapas, igual o dele
->
-> nao faz tudo hoje, me fala quanto de diferenca esta o meu com o do professor e vou fazer 1 commit por dia, pra nao ficar escrashado, sobre a landing page academica, voce nao consegue acessar o figma que te dei? tenho o projeto no figma e agora precisa virar código
+> landing page academica, voce nao consegue acessar o figma que te dei? tenho o projeto no figma e agora precisa virar código
 
-> estamos apenas conversando por enqaunto
+> estamos apenas conversando por enquanto
 
 > tem como eu exportar o código direto do figma? eu permito voce acessar o figma pelo link diretamente.
 
