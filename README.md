@@ -23,5 +23,4 @@ A agenda contém quatro atividades de 23 de novembro visíveis no material consu
 
 ## Documentação
 
-- [Guia de apresentação](GUIA_APRESENTACAO.md)
 - [Prompts utilizados](PROMPTS.md)
