@@ -19,7 +19,7 @@ A agenda contém quatro atividades de 23 de novembro visíveis no material consu
 
 ## Integrantes
 
-- [Nome completo a informar]
+- Rafaela Morais Soares Santos
 
 ## Documentação
 
