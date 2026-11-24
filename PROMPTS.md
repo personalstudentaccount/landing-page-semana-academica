@@ -401,3 +401,27 @@ Prompt usado no ImageGen para a foto ilustrativa da seção Sobre:
 ## 8. Conferência final dos requisitos
 
 > verifica se tudo esta feito conforme requisitos
+
+## 9. Conteúdo e identificação
+
+> Os dados da landing são ficticios, então gera algo aleatorio, tire todas as informacoes que mostra que estão "pendente" nao tem nada pendente
+>
+> nao é pra dizer que é ficticio, simplesmente gera um dado ficticio cara
+>
+> Nome, Rafaela Morais Soares Santos, atualiza o readme
+
+> Campus, Fepi - Centro Universitário de Itajubá
+>
+> 2gera esses palestrantes ai
+>
+> 3ok
+>
+> 4ok
+>
+> 5ok
+>
+> proposta
+>
+> sim mudar pra Rafaela morais soares santos
+>
+> faca isso, peeenche com imagens lugares sem img tbm pra nao ficar fuei

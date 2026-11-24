@@ -2,7 +2,6 @@ const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navegacao');
 const mobileLayout = window.matchMedia('(max-width: 900px)');
 const notice = document.querySelector('#aviso');
-const noticeMessage = document.querySelector('#aviso-texto');
 
 function setMenu(open) {
   navigation.classList.toggle('is-open', open);
@@ -32,12 +31,26 @@ navigation.querySelectorAll('a:not([data-message])').forEach((link) => {
   });
 });
 
-document.querySelectorAll('[data-message]').forEach((link) => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-    noticeMessage.textContent = link.dataset.message;
+const registrationForm = document.querySelector('#inscricao-form');
+const registrationSuccess = document.querySelector('#inscricao-sucesso');
+
+document.querySelectorAll('[data-registration]').forEach((button) => {
+  button.addEventListener('click', () => {
+    registrationForm.hidden = false;
+    registrationSuccess.hidden = true;
+    registrationForm.reset();
     notice.showModal();
   });
+});
+
+registrationForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  registrationForm.hidden = true;
+  registrationSuccess.hidden = false;
+});
+
+document.querySelector('[data-close-dialog]').addEventListener('click', () => {
+  notice.close();
 });
 
 menuButton.hidden = false;
