@@ -191,14 +191,6 @@ Na landing page, inclua:
 - Preserve o conteúdo original dos prompts, sem inventar interações.
 - Organize cronologicamente ou por sequência identificada.
 
-**GUIA_APRESENTACAO.md**
-- Visão geral do projeto.
-- Explicação do HTML, CSS e JavaScript.
-- Principais funções e componentes.
-- Como demonstrar as funcionalidades.
-- Decisões técnicas e dificuldades.
-- Perguntas que o professor poderá fazer, com explicações fundamentadas no código real.
-
 ## 5. Preparação para avaliação
 
 O projeto precisa permitir que o aluno explique:
@@ -210,10 +202,6 @@ O projeto precisa permitir que o aluno explique:
 - Como os arquivos se relacionam.
 - Como o Git registra o desenvolvimento.
 - Por que determinadas decisões técnicas foram tomadas.
-
-Crie um guia de estudo e apresentação baseado exclusivamente na implementação final.
-
-Não gere explicações genéricas que contradigam o código desenvolvido.
 
 ## 6. Estratégia de execução
 
