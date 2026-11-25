@@ -357,3 +357,9 @@ Prompt usado no ImageGen para a foto ilustrativa da seção Sobre:
 > sim mudar pra Rafaela morais soares santos
 >
 > faca isso, peeenche com imagens lugares sem img tbm pra nao ficar fuei
+
+## 10. Simulação de inscrição
+
+> Quando Clico no fazer inscrição só tem isso
+>
+> quero que dê pra simular fazer uma inscrição, tudo front mesmo sem backend por enquanto

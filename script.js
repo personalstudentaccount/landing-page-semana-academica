@@ -33,6 +33,8 @@ navigation.querySelectorAll('a:not([data-message])').forEach((link) => {
 
 const registrationForm = document.querySelector('#inscricao-form');
 const registrationSuccess = document.querySelector('#inscricao-sucesso');
+const registrationName = document.querySelector('#nome-inscricao');
+const registrationConfirmation = document.querySelector('#inscricao-confirmacao');
 
 document.querySelectorAll('[data-registration]').forEach((button) => {
   button.addEventListener('click', () => {
@@ -40,17 +42,27 @@ document.querySelectorAll('[data-registration]').forEach((button) => {
     registrationSuccess.hidden = true;
     registrationForm.reset();
     notice.showModal();
+    registrationName.focus();
   });
 });
 
 registrationForm.addEventListener('submit', (event) => {
   event.preventDefault();
+  const formData = new FormData(registrationForm);
+  const name = String(formData.get('nome')).trim();
+  const day = String(formData.get('dia'));
+
+  registrationConfirmation.textContent = `Obrigado, ${name}. Sua participação em ${day} está confirmada.`;
   registrationForm.hidden = true;
   registrationSuccess.hidden = false;
 });
 
-document.querySelector('[data-close-dialog]').addEventListener('click', () => {
-  notice.close();
+document.querySelectorAll('[data-close-dialog]').forEach((button) => {
+  button.addEventListener('click', () => notice.close());
+});
+
+notice.addEventListener('click', (event) => {
+  if (event.target === notice) notice.close();
 });
 
 menuButton.hidden = false;

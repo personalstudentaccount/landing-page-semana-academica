@@ -11,7 +11,7 @@ Abra `index.html` em um navegador. Para usar um servidor local, execute `python 
 - Navegação entre seções e menu adaptado a dispositivos móveis.
 - Apresentação do evento, destaques, informações sobre a semana e palestrantes.
 - Programação dos cinco dias com abas, controle por teclado e download em `.txt`.
-- Formulário de inscrição com confirmação visual.
+- Formulário de inscrição simulado no front-end, com validação dos campos e confirmação personalizada; não envia dados a um servidor.
 - Contato por e-mail e telefone no rodapé.
 - Retratos vetoriais dos palestrantes e imagem da seção Sobre em `assets/`.
 
