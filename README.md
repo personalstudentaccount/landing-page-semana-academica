@@ -21,6 +21,5 @@ Abra `index.html` em um navegador. Para usar um servidor local, execute `python 
 
 ## Documentação e referência
 
-- [Guia de apresentação](GUIA_APRESENTACAO.md)
 - [Prompts utilizados](PROMPTS.md)
 - [Protótipo no Figma](https://www.figma.com/design/Sdy6smlooBjashjhqnSGL1/projeto?node-id=2-9041)
