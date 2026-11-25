@@ -145,33 +145,25 @@ button { font: inherit; cursor: pointer; }
 .agenda-link:hover { text-decoration: underline; }
 .agenda-link span { margin-left: 5px; color: var(--cyan); }
 
-/* A geometria do protótipo é desenhada em CSS. */
+/* Foto principal do evento */
 .hero-art { position: relative; isolation: isolate; width: min(100%, 548px); aspect-ratio: 1.08; justify-self: center; }
-.hero-art__panel {
+.hero-art__image {
   position: absolute;
-  inset: 13% 8% 21% 12%;
+  inset: 10% 8% 18% 12%;
+  z-index: 0;
+  width: 80%;
+  height: 72%;
+  object-fit: cover;
   border: 1px solid #304362;
-  border-radius: 6%;
-  background: radial-gradient(ellipse at 52% 53%, #203574, #171f48 40%, #10203b 74%);
+  border-radius: 22px;
   transform: rotate(-3deg);
-  box-shadow: 0 14px 38px #0004;
+  box-shadow: 0 14px 38px #0008;
 }
-
-.hero-art__panel::before, .hero-art__panel::after {
-  content: "";
-  position: absolute;
-  width: clamp(6px, .8vw, 12px);
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background: var(--cyan);
-  box-shadow: 0 0 13px currentColor;
-}
-
-.hero-art__panel::before { top: 12%; left: 4%; color: var(--cyan); }
-.hero-art__panel::after { right: 7%; bottom: 15%; background: #9a79ff; color: #9a79ff; }
-.hero-art__orbit { position: absolute; inset: 0 5% 28% 19%; border: 1px solid #253c616b; border-radius: 50%; transform: rotate(-18deg); }
+.hero-art::after { position: absolute; z-index: 1; inset: 10% 8% 18% 12%; border-radius: 22px; background: linear-gradient(145deg, #08122520, #14225236); content: ""; transform: rotate(-3deg); pointer-events: none; }
+.hero-art__orbit { position: absolute; z-index: 2; inset: 0 5% 28% 19%; border: 1px solid #253c616b; border-radius: 50%; transform: rotate(-18deg); }
 .hero-art__tag {
   position: absolute;
+  z-index: 3;
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -389,10 +381,6 @@ button { font: inherit; cursor: pointer; }
   background: radial-gradient(ellipse at 50% 45%, #184254, #111f34 68%);
 }
 .speaker-card__portrait img { display: block; width: 100%; height: 100%; min-height: 180px; object-fit: cover; }
-.speaker-card__portrait--violet { background: radial-gradient(ellipse at 50% 45%, #3c326c, #111f34 68%); }
-.speaker-card__portrait--violet span { color: #d6c5ff; }
-.speaker-card__portrait--cyan { background: radial-gradient(ellipse at 50% 45%, #165160, #111f34 68%); }
-.speaker-card__portrait--blue { background: radial-gradient(ellipse at 50% 45%, #233e75, #111f34 68%); }
 .speaker-card__info { padding: 16px; }
 .speaker-card__eyebrow { margin: 0 0 6px; color: var(--cyan); font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
 .speaker-card__info h3 { margin: 0; font-size: 18px; font-weight: 550; }
